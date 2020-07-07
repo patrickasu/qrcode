@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: sans-serif;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('/img/background.png') !important;
+    background-position: center;
+    background-size: cover;
+    font-weight: 300;
+}
+
+.mylogin{ 
+    color: #fff !important;
+}

@@ -3,7 +3,6 @@
         <thead>
             <tr>   
                 <th>Product Name</th>
-                <th>Website</th>
                 <th>Amount</th>
                 <th>Status</th>
                 <th>Action</th>
@@ -15,7 +14,6 @@
             <td>
                 <a class="text-info" href="{{ route('qrcodes.show', [$qrcode->id]) }}"><b>{{ $qrcode->product_name }}</b></a>
             </td>
-            <td>{{ $qrcode->website }}</td>
             <td>${{ $qrcode->amount }}</td>
             <td>
                 @if ($qrcode->status == 1)

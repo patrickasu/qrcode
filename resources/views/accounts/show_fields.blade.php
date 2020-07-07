@@ -12,7 +12,7 @@
     <!-- Balance Field -->
     <div class="form-group">
         {!! Form::label('balance', 'Balance:') !!}
-        <p>${{ number_format($account->balance) }}</p>
+        <p>₦{{ number_format($account->balance) }}</p>
     </div>
 
     <!-- Total Credit Field -->

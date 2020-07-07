@@ -14,7 +14,7 @@
             <td>
                 <a class="text-info" href="{{ route('qrcodes.show', [$qrcode->id]) }}"><b>{{ $qrcode->product_name }}</b></a>
             </td>
-            <td>${{ $qrcode->amount }}</td>
+            <td>₦{{ number_format($qrcode->amount) }}</td>
             <td>
                 @if ($qrcode->status == 1)
                      <i class="fa fa-check-square text-green" style="font-size:20px;"></i>

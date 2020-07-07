@@ -13,15 +13,15 @@
 
     <!-- Amount Field -->
     <div class="form-group">
-        <h4>Amount: ${{ $qrcode->amount }}</h4>
+        <h4>Amount: ₦{{ $qrcode->amount }}</h4>
     </div>
 
      <!-- Product Url Field -->
-    <div class="form-group">
+    {{-- <div class="form-group">
         {!! Form::label('product_url', 'Product Url:') !!}
         <p><a href="{{ $qrcode->product_url }}" target="_blank">{{ $qrcode->product_url }}</a></p>
        
-    </div>
+    </div> --}}
 
     @if (!Auth::guest() && ($qrcode->user_id == Auth::user()->id || Auth::user()->role_id < 3))
         <hr> 

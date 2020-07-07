@@ -14,7 +14,7 @@
                     <form method="POST" action="{{ route('pay') }}" accept-charset="UTF-8" class="form-horizontal" role="form">
                         <div class="row" style="margin-bottom:40px;">
                             <div class="col-md-8 col">
-                                <h3>{{ $qrcode->product_name }}</h3><h4>$ {{ $qrcode->amount }}</h4>  
+                                <h3>{{ $qrcode->product_name }}</h3><h4>₦ {{ number_format($qrcode->amount) }}</h4>  
                                 <input type="hidden" name="email" value="patrickasu@gmail.com"> {{-- required --}}
                                 <input type="hidden" name="orderID" value="{{ $transaction->id }}">
                                 <input type="hidden" name="amount" value="{{ $qrcode->amount*100 }}"> {{-- required in kobo --}}
